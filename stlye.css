@@ -1,8 +1,26 @@
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;  
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999;         
+  background-color: transparent;
+  display: block;
+}
+html {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
 *{
     margin: 0;
     padding: 0;
 }
 .text-box{
+z-index: 10000;
 font-size: 100px;
 font-family:Georgia, 'Times New Roman', Times, serif;
 position:absolute;
@@ -19,14 +37,14 @@ span{
 }
 @keyframes move{
 0%{ 
-    text-shadow: 0 0 30px rgba(180, 0, 0, 0);
+    text-shadow: 0 0 80px rgba(255, 0, 0, 0);
 }
 50%{ 
-    text-shadow: 0 0 30px rgba(180, 0, 0, 0.3);
+    text-shadow: 0 0 80px rgba(255, 0, 0, 0.3);
     transform:translateY(40px);
 }
 100%{ 
-    text-shadow: 0 0 30px rgba(180, 0, 0, 0);
+    text-shadow: 0 0 80px rgba(255, 0, 0, 0);
   }
 }
 span:nth-child(1)
