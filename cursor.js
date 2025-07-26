@@ -19,8 +19,8 @@ class Particle {
     this.alpha = 1;
     this.char = chars[Math.floor(Math.random() * chars.length)];
     this.size = 40; 
-    this.vx = (Math.random() - 0.5) *21;
-    this.vy = (Math.random() - 0.5) *31;
+    this.vx = (Math.random() - 0.5) *5;
+    this.vy = (Math.random() - 0.5) *3;
   }
   update() {
     this.x += this.vx;
