@@ -38,13 +38,15 @@ class Particle {
 
 window.addEventListener("mousemove", (e) => {
   for (let i = 0; i < 5; i++) {
-    particles.push(new Particle(e.clientX, e.clientY));
+    const randomX=Math.random() * canvas.width;
+    const randomY=Math.random() * canvas.height;
+    particles.push(new Particle(randomX, randomY));
   }
-});
+},100);
 
 function animate() {
- ctx.fillStyle = 'rgba(255, 255, 255, 0.1)'; // semi-transparent black
-ctx.fillRect(0, 0, canvas.width, canvas.height);
+ ctx.fillStyle = 'rgba(255, 255, 255, 0)'; 
+ctx.clearRect(0, 0, canvas.width, canvas.height);
   for (let i = particles.length - 1; i >= 0; i--) {
     particles[i].update();
     particles[i].draw(ctx);
