@@ -1,81 +1,45 @@
-canvas {
-  position: fixed;
-  top: 0;
-  left: 0;
-  pointer-events: none;  
-  width: 100vw;
-  height: 100vh;
-  z-index: 9999;         
-  background-color: transparent;
-  display: block;
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Implying</title>  
+  <link rel="stylesheet" href="header.css">
+  <link rel="icon" type="image/x-icon" href="https://sdmntprnorthcentralus.oaiusercontent.com/files/00000000-32d8-622f-af85-b3ecab54e7a4/raw?se=2025-07-26T23%3A35%3A20Z&sp=r&sv=2024-08-04&sr=b&scid=743acd35-00c7-58df-aabf-7905b8b83b54&skoid=9ccea605-1409-4478-82eb-9c83b25dc1b0&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-07-26T22%3A30%3A34Z&ske=2025-07-27T22%3A30%3A34Z&sks=b&skv=2024-08-04&sig=RADlU6gufGUVgl7VLcTp7a0vK5uEXIBq0k24iemL5Cs%3D">
+</head>
+    <body style="background-color: rgba(216, 215, 215, 0.719);">
+<div class="text-box">
+<span data-char="I">I</span>
+<span data-char="M">M</span>
+<span data-char="P">P</span>
+<span data-char="L">L</span>
+<span data-char="Y">Y</span>
+<span data-char="I">I</span>
+<span data-char="N">N</span>
+<span data-char="G">G</span>
+</div>
+<style> .grow-on-hover{
+  transition: transform 0.2s ease;
+  transform: translateX(-50%);
 }
-html {
-  box-sizing: border-box;
+.grow-on-hover:hover{
+  transform: translateX(-50%) scale(1.2);
 }
-*, *::before, *::after {
-  box-sizing: inherit;
-}
-*{
-    margin: 0;
-    padding: 0;
-}
-.text-box{
-z-index: 10000;
-font-size: 100px;
-font-family:Georgia, 'Times New Roman', Times, serif;
-position:absolute;
-top: 50%;
-left:50%;
-transform: translate(-50%,-50%);
-}
-span{
-    display:inline-block;
-    font-weight:bolder;
-    animation: move 2s ease-in-out infinite;
-    color:#fff;
+</style>
+<a href="https://www.instagram.com/implying/" target="_blank">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/500px-Instagram_icon.png" 
+  class="grow-on-hover"
+  style=
+  "position: fixed; 
+  z-index: 10000; 
+  bottom: 20px; 
+  left: 50%;
+  height:auto;
+  width: 40px;
+  cursor: pointer;
+  ">
+</a>
 
-}
-@keyframes move{
-0%{ 
-    text-shadow: 0 0 80px rgba(255, 0, 0, 0);
-}
-50%{ 
-    text-shadow: 0 0 80px rgba(255, 0, 0, 0.3);
-    transform:translateY(40px);
-}
-100%{ 
-    text-shadow: 0 0 80px rgba(255, 0, 0, 0);
-  }
-}
-span:nth-child(1)
-{
-    animation-delay: 0.1s;
-}
-span:nth-child(2)
-{
-    animation-delay: 0.2s;
-}
-span:nth-child(3)
-{
-    animation-delay: 0.3s;
-}
-span:nth-child(4)
-{
-    animation-delay: 0.4s;
-}
-span:nth-child(5)
-{
-    animation-delay: 0.5s;
-}
-span:nth-child(6)
-{
-    animation-delay: 0.6s;
-}
-span:nth-child(7)
-{
-    animation-delay: 0.7s;
-}
-span:nth-child(8)
-{
-    animation-delay: 0.8s;
-}
+ <canvas id="canvas"></canvas>
+<script src="cursor.js"></script>
+    </body>
+</html>
