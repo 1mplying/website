@@ -8,7 +8,7 @@ function resizeCanvas() {
 resizeCanvas();
 window.addEventListener("resize", resizeCanvas);
 
-const chars = "ZXY1234567890";
+const chars = "IMPLYING";
 const particles = []
 ;
 
@@ -42,7 +42,7 @@ window.addEventListener("mousemove", (e) => {
     const randomY=Math.random() * canvas.height;
     particles.push(new Particle(randomX, randomY));
   }
-},100);
+});
 
 function animate() {
  ctx.fillStyle = 'rgba(255, 255, 255, 0)'; 
