@@ -28,6 +28,17 @@ top: 50%;
 left:50%;
 transform: translate(-50%,-50%);
 }
+.text-box2 p{
+color: #ffffff;
+z-index: 10000;
+font-size: 30px;
+font-family: 'Parisienne', cursive;
+position:absolute;
+bottom: 30%;
+left: 34%;
+text-align: center;
+text-shadow: red;
+}
 span{
     display:inline-block;
     font-weight:bolder;
@@ -80,6 +91,7 @@ span:nth-child(8)
     animation-delay: 0.8s;
 }
 .text-box span {
+  will-change: transform, opacity;
   position: relative;
   display: inline-block;
   font-size: 100px;
