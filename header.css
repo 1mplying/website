@@ -1,5 +1,5 @@
 canvas {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   pointer-events: none;  
@@ -35,8 +35,8 @@ font-size: 30px;
 font-family: 'Parisienne', cursive;
 position:absolute;
 bottom: 30%;
-left: 34%;
-text-align: center;
+left: 50%;
+transform: translate(-50%,-50%);
 text-shadow: red;
 }
 span{
